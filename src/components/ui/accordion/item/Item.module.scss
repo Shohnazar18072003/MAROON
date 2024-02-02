@@ -1,0 +1,50 @@
+.wrapper {
+    border-top: 1px solid #b3bac1;
+
+    &:last-child {
+        border-bottom: 1px solid #b3bac1;
+    }
+
+    .header {
+        padding: 20px 10px 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #122947;
+
+            @media (width <= 425px) {
+                font-size: 16px;
+            }
+        }
+
+        .icon {
+            min-width: 12px;
+        }
+    }
+
+    .container {
+        height: 0;
+        overflow: hidden;
+
+        &__active {
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .body {
+            color: #122947;
+            line-height: 20px;
+            font-size: 15px;
+            padding-right: 10px;
+
+            @media (width <= 425px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

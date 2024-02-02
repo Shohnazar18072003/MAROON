@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    gap: 80px;
+    padding-left: 100px;
+    align-items: center;
+
+    @media (width <= 768px) {
+        padding-left: 45px;
+        gap: 50px;
+    }
+
+    @media (width <= 570px) {
+        flex-direction: column;
+        padding: 0 35px;
+    }
+
+    @media (width <= 425px) {
+        padding: 0 15px;
+    }
+
+    .link {
+        display: none;
+
+        @media (width <= 570px) {
+            display: block;
+        }
+    }
+}

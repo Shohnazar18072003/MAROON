@@ -1,0 +1,11 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    grid-column: 3 / 4;
+    gap: 20px;
+
+    .button {
+        padding: 5px;
+    }
+}

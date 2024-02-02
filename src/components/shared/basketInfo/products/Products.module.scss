@@ -1,0 +1,19 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f1ed;
+    flex: 1;
+    width: 100%;
+
+    @media (width <= 425px) {
+        border-radius: 13px;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 16px;
+    }
+}
